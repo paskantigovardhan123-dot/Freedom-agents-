@@ -1,0 +1,6 @@
+{
+  "name": "Freedom Agent",
+  "description": "Futuristic Multi-Agent AI Command Center and Universal AI Hub for local and cloud models",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

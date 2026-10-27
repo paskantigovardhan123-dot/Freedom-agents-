@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Shield Outline -->
+    <path
+        android:fillColor="#4F46E5"
+        android:strokeColor="#A5B4FC"
+        android:strokeWidth="3.5"
+        android:pathData="M 54,26 L 76,34 C 76,56 66,74 54,82 C 42,74 32,56 32,34 Z" />
+    <!-- Inner Core -->
+    <path
+        android:fillColor="#6366F1"
+        android:pathData="M 54,38 L 66,45 L 66,59 L 54,66 L 42,59 L 42,45 Z" />
+    <!-- AI Core Eye -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 54,52 m -5,0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0" />
+    <!-- Green Lock Status -->
+    <path
+        android:fillColor="#10B981"
+        android:strokeColor="#10B981"
+        android:strokeWidth="1.5"
+        android:pathData="M 51,70 L 57,70 L 57,74 L 51,74 Z M 52,70 L 52,68 C 52,66.9 52.9,66 54,66 C 55.1,66 56,66.9 56,68 L 56,70" />
+</vector>
