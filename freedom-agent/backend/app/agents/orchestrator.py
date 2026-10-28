@@ -16,7 +16,7 @@ from backend.app.core.security import generate_secure_id
 class OrchestratorAgent(BaseAgent):
     """Central agent coordinator driving deterministic workflows."""
 
-    def __init__(self, tool_registry, max_retries: int = 3):
+    def __init__(self, tool_registry, max_retries: int = 3, model_registry=None):
         super().__init__(
             agent_id="orchestrator",
             name="Orchestrator Agent",
@@ -24,8 +24,9 @@ class OrchestratorAgent(BaseAgent):
             tool_registry=tool_registry,
         )
         self.max_retries = max_retries
-        self.architect = ArchitectAgent(tool_registry)
-        self.developer = DeveloperAgent(tool_registry)
+        self.model_registry = model_registry
+        self.architect = ArchitectAgent(tool_registry, model_registry=model_registry)
+        self.developer = DeveloperAgent(tool_registry, model_registry=model_registry)
         self.tester = TesterAgent(tool_registry)
         self.reviewer = ReviewerAgent(tool_registry)
         self.security = SecurityReviewerAgent(tool_registry)

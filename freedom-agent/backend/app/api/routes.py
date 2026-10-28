@@ -102,7 +102,7 @@ class FreedomAgentService:
             allow_sensitive=self.policy.allow_sensitive_file_inspection,
         )
         task_tools = ToolRegistry(task_sandbox, self.approvals, self.policy)
-        task_orchestrator = OrchestratorAgent(task_tools, max_retries=self.policy.max_retries)
+        task_orchestrator = OrchestratorAgent(task_tools, max_retries=self.policy.max_retries, model_registry=self.models)
 
         # Configure task
         task = TaskItem(
